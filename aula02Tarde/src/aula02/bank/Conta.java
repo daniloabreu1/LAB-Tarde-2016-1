@@ -15,6 +15,7 @@ public class Conta {
     private double saldo;
     private double limite;
     private Cliente titular;
+    private static int qtContas=0;
 
     public int getNumeroConta() {
         return numeroConta;
@@ -47,7 +48,17 @@ public class Conta {
     public void setTitular(Cliente titular) {
         this.titular = titular;
     }
+
+    public static int getQtContas() {
+        return qtContas;
+    }
     
+    
+    
+    public Conta(Cliente titular){
+        this.setTitular(titular);
+        qtContas++;
+    }
     
     
 }
