@@ -303,8 +303,14 @@ public class JanelaInicial extends javax.swing.JFrame {
         String cidade = jTextField1.getText();
         String estado = jList1.getSelectedValue();
         String altura = jSpinner1.getValue().toString();
-        String i1 = checkJava.getText();
-        String i2 = checkMysl.getText();
+        String i1 = "";
+        String i2 = "";
+         if (checkJava.isSelected()) {
+            i1 = checkJava.getText();
+        }
+        if (checkMysl.isSelected()) {
+            i2 = checkMysl.getText();
+        }
         String interesse = i1 + "," + i2;
         String s = nome + ";" + cpf + ";" + data + ";" + sexo + ";" + cidade + ";" + estado + ";" + altura + ";" + interesse;
         
