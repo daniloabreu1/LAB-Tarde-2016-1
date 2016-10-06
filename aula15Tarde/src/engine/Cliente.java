@@ -44,10 +44,6 @@ public class Cliente {
         this.cpf = cpf;
     }
 
-    public void setId(int Id) {
-        id = Id;
-    }
-
     public static int getId() {
         return id;
     }

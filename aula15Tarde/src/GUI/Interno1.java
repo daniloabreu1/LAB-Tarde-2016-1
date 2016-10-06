@@ -294,8 +294,7 @@ public boolean checar(){
 public boolean preencher(){
     Cliente c = new Cliente();
     c.setNome(jTextField2.getText());
-    c.setCpf(jFormattedTextField1.getText());
-    //c.setUser(Cliente.getId());
+    c.setCpf(jFormattedTextField1.getText()); 
     Cliente.lista.add(c);
     return true;
 }
